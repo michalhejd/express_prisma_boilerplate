@@ -1,4 +1,9 @@
-# Express Prisma Typescript Boilerplate
+# Express Prisma Typescript Boilerplate on Docker
 ### included libraries: express, bcrypt, jsonwebtoken, prisma, nodemon, morgan, dotenv, cors, typescript, nodemailer
-npx tsc --init
-npx prisma generate
+
+
+```
+npm i
+npx prisma generate --schema=./prisma/schema.prisma
+npx prisma migrate dev --name init
+```
